@@ -1,5 +1,6 @@
 #ScaleFramework
 Main：
+
 	Web服务
 		写config文件、monitorQ的队列要修改
 	指定URI
@@ -10,6 +11,7 @@ Main：
 	创建framework
 
 Class scalerscheduler(scheduler):
+
 	def __init__(self, MonitorExecutor, ScaleExecutor, …)
 
 	def registed()
