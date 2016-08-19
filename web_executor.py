@@ -48,7 +48,7 @@ class webExecutor(Executor):
             update.task_id.value = task.task_id.value
             update.state = mesos_pb2.TASK_RUNNING
             driver.sendStatusUpdate(update)
-            myport = task.data
+            myport = int(task.data)
             app = MyApplication(urls, globals())
             app.run(port=myport)
 
