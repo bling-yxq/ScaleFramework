@@ -100,9 +100,8 @@ def hard_shutdown():
 
 if __name__ == "__main__":
 
-    baseURI = "20.26.25.117:2222/ScaleFramework"
-    uris = [ "web_executor.py",
-             "rules.json"]
+    baseURI = "/root/ScaleFramework"
+    uris = [ "web_executor.py"]
     uris = [os.path.join(baseURI, uri) for uri in uris]
 
     webExecutor = mesos_pb2.ExecutorInfo()
